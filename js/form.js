@@ -42,8 +42,9 @@ document.getElementById('voluntariado-form').addEventListener('submit', function
     } else {
         formResponse.style.color = 'green';
         formResponse.textContent = '¡Formulario enviado con éxito!';
-
-        // Limpiar los campos del formulario
-        document.getElementById('voluntariado-form').reset(); // Esto limpia todos los campos del formulario
+        
+    
     }
 });
+
+
