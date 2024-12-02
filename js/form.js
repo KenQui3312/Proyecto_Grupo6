@@ -42,13 +42,8 @@ document.getElementById('voluntariado-form').addEventListener('submit', function
     } else {
         formResponse.style.color = 'green';
         formResponse.textContent = '¡Formulario enviado con éxito!';
-        
-        // Restablecer el formulario
-        document.getElementById('voluntariado-form').reset();
-        
-        // Limpiar la respuesta después de unos segundos (opcional)
-        setTimeout(() => {
-            formResponse.innerHTML = '';
-        }, 3000); // Borra el mensaje de éxito después de 3 segundos
+
+        // Limpiar los campos del formulario
+        document.getElementById('voluntariado-form').reset(); // Esto limpia todos los campos del formulario
     }
 });
