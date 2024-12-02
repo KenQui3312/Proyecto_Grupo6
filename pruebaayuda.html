@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación y Slider</title>
+    <link rel="stylesheet" href="CSS/styles2.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+ 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Galdeano&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="MEDIA/LOGO-FRONT_Mesa-de-trabajo-1_Mesa-de-trabajo-1.png" alt="Logo">  
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li class="dropdown">
+                <a href="acerca.html">ACERCA DE NOSOTROS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="programas.html">NUESTROS PROGRAMAS</a></li>
+                    <li><a href="ayuda.html">CÓMO AYUDAR</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="galeria.html">GALERÍA</a>
+                <ul class="dropdown-menu">
+
+                </ul>
+            </li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="dropdown">
+                <a href="contacto.html">CONTÁCTENOS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="donaciones.html">DONACIONES</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header-cdh">
+        <div class="header-content">
+            <div class="header-overlay"></div>
+            <div class="header-text">
+                <h1>Ayuda a CDH Honduras</h1>
+                <a href="#voluntariado-form" class="header-button">Quiero ser voluntario</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-voluntariado">
+        <h2>¿Cómo Puedes Ayudar?</h2>
+        <p>Nos encantaría contar con tu apoyo. Aquí te presentamos algunas formas en las que puedes participar como voluntario:</p>
+        <div class="voluntariado-grid">
+            <!-- Voluntariado 1 -->
+            <div class="voluntariado-item">
+                <img src="https://via.placeholder.com/300x200" alt="Asistencia en eventos" class="voluntariado-img">
+                <h3>Asistencia en eventos</h3>
+                <p>Ayuda en la organización de talleres y actividades comunitarias, aportando energía y creatividad a nuestras iniciativas.</p>
+            </div>
+            <!-- Voluntariado 2 -->
+            <div class="voluntariado-item">
+                <img src="https://via.placeholder.com/300x200" alt="Trabajo administrativo" class="voluntariado-img">
+                <h3>Trabajo administrativo</h3>
+                <p>Apoya en tareas de oficina como la gestión de documentos, manejo de información y comunicación interna.</p>
+            </div>
+            <!-- Voluntariado 3 -->
+            <div class="voluntariado-item">
+                <img src="https://via.placeholder.com/300x200" alt="Proyectos de sensibilización" class="voluntariado-img">
+                <h3>Proyectos de sensibilización</h3>
+                <p>Colabora en campañas educativas y actividades orientadas a promover el conocimiento de los derechos humanos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-inscripcion">
+        <h2>Inscripción</h2>
+        <p>Si estás interesado en ser voluntario, por favor completa el siguiente formulario:</p>
+        <form action="#" method="POST" id="voluntariado-form" class="form-voluntariado">
+            <div class="form-group">
+                <label for="nombre" class="label-nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required class="input-text" placeholder="Tu nombre completo">
+            </div>
+    
+            <div class="form-group">
+                <label for="email" class="label-email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required class="input-email" placeholder="Tu correo electrónico">
+            </div>
+    
+            <div class="form-group">
+                <label for="telefono" class="label-telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required class="input-telefono" placeholder="Tu número de teléfono">
+            </div>
+    
+            <div class="form-group">
+                <label for="voluntariado" class="label-tipo">Tipo de Voluntariado:</label>
+                <select id="voluntariado" name="voluntariado" class="select-voluntariado">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="evento">Asistencia en eventos</option>
+                    <option value="administrativo">Trabajo administrativo</option>
+                    <option value="proyectos">Proyectos de sensibilización</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="comentarios" class="label-comentarios">Comentarios Adicionales:</label>
+                <textarea id="comentarios" name="comentarios" class="textarea-comentarios" placeholder="Escribe cualquier comentario adicional" rows="4"></textarea>
+            </div>
+    
+            <button type="submit" class="button-submit">Enviar</button>
+        </form>
+        <div id="form-response" class="form-response"></div>
+    </section>
+      <script src="js/script.js"></script>
+
+
+
+    <footer>
+        <p>&copy; 2024 Centro de Desarrollo Humano - CDH | Derechos reservados.</p>
+        <div>
+            <a href="https://www.instagram.com" target="_blank" title="Visítanos en Instagram">Instagram</a> |
+            <a href="https://www.youtube.com" target="_blank" title="Visítanos en YouTube">YouTube</a>
+        </div>
+    </footer>
+
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

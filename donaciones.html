@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONACIONES</title>
+    <link rel="stylesheet" href="CSS/styles2.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="js/script.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Galdeano&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="MEDIA/LOGO-FRONT_Mesa-de-trabajo-1_Mesa-de-trabajo-1.png" alt="Logo">
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li class="dropdown">
+                <a href="acerca.html">ACERCA DE NOSOTROS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="programas.html">NUESTROS PROGRAMAS</a></li>
+                    <li><a href="ayuda.html">CÓMO AYUDAR</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="galeria.html">GALERÍA</a>
+                <ul class="dropdown-menu">
+
+                </ul>
+            </li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="dropdown">
+                <a href="contacto.html">CONTÁCTENOS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="donaciones.html">DONACIONES</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="form-wrapper">
+        <!-- Imagen decorativa a la izquierda -->
+        <div class="decora-image">
+            <img src="MEDIA/Best-Free-1080-x-1920-Backgrounds.jpg" alt="Imagen decorativa" />
+        </div>
+        <div class="containerr">
+            <h1>Formulario de Donación</h1>
+
+            <form id="donationForm">
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Monto de Donación (Lempiras)</label>
+                    <input type="number" id="amount" name="amount" required min="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="paymentMethod">Método de Pago</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="">Seleccione un método de pago</option>
+                        <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                        <option value="transferencia">Transferencia Bancaria</option>
+                        
+                    </select>
+                </div>
+
+                <!-- Campos para tarjeta de crédito -->
+                <div id="creditCardFields" class="form-group hidden">
+                    <label for="cardNumber">Número de Tarjeta</label>
+                    <input type="text" id="cardNumber" name="cardNumber" maxlength="16">
+
+                    <label for="cardExpiry">Fecha de Expiración</label>
+                    <input type="text" id="cardExpiry" name="cardExpiry" maxlength="5">
+
+                    <label for="cardCVV">Código de Seguridad (CVV)</label>
+                    <input type="text" id="cardCVV" name="cardCVV" maxlength="3">
+                </div>
+
+                <!-- Campos para cuenta bancaria -->
+                <div id="bankAccountFields" class="form-group hidden">
+                    <label for="accountNumber">Número de Cuenta</label>
+                    <input type="text" id="accountNumber" name="accountNumber" maxlength="20">
+
+                    <label for="bankName">Nombre del Banco</label>
+                    <input type="text" id="bankName" name="bankName">
+                </div> 
+
+                <button type="submit" class="btn-submit">Realizar Donación</button>
+
+                
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Centro de Desarrollo Humano - CDH | Derechos reservados.</p>
+        <div>
+            <a href="https://www.instagram.com" target="_blank" title="Visítanos en Instagram">Instagram</a> |
+            <a href="https://www.youtube.com" target="_blank" title="Visítanos en YouTube">YouTube</a>
+        </div>
+    </footer>
+    
+    </section>
+</body>
+
+</html>

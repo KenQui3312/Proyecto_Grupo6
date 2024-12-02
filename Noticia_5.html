@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación y Slider</title>
+    <link rel="stylesheet" href="CSS/Noticias.css">
+    <script src="js/Slider.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Galdeano&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="MEDIA/LOGO-FRONT_Mesa-de-trabajo-1_Mesa-de-trabajo-1.png" alt="Logo">
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li class="dropdown">
+                <a href="acerca.html">ACERCA DE NOSOTROS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="programas.html">NUESTROS PROGRAMAS</a></li>
+                    <li><a href="ayuda.html">CÓMO AYUDAR</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="galeria.html">GALERÍA</a>
+                <ul class="dropdown-menu">
+
+                </ul>
+            </li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="dropdown">
+                <a href="contacto.html">CONTÁCTENOS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="donaciones.html">DONACIONES</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+        
+        <main>
+            <div class="ContenedorTotal">
+                <div class="encabezado">
+                    <img alt="" src="https://secure.gravatar.com/avatar/f38490b260b38f2bf43079b376359b44?s=46&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/f38490b260b38f2bf43079b376359b44?s=92&amp;d=mm&amp;r=g 2x" class="avatar avatar-46 photo" height="46" width="46">
+                    <div class="texto">
+                        <h2>CDH</h2>
+                        <p>08 MAYO 2024 | Publicado en Noticias</p>
+                    </div>
+                </div>
+                <div class="contenedorN1">
+                    <section image-text>
+                        <h1>Reunión con la Red Regional de Defensores de Derechos Humanos y la coordinadora Ambiental Indigena Lenca de La Paz</h1>
+                        <img src="MEDIA/BlogIMG5.jpg" alt="Jóvenes midiendo la lluvia" id="IMG1">
+                        <p> 
+                            El día viernes, en la ciudad de Marcala, La Paz, se realizó reunión con la Red Regional de Defensores de Derechos Humanos y la coordinadora Ambiental Indigena Lenca de La Paz, 
+                            contando con la presencia del jefe Global de Fondos Dominic Brain CAID UK ,Jefe de Proyecto Yanni Vilchez CAID y CDH RCO, donde se trataron temas como ser: 
+                            Problemáticas de sus territorios, Necesidades de sus pobladores de sus organizaciones y de una manera general los casos de sus pueblos, los consejos que se están organizando en sus territorios,
+                            presentación sobre la extensión de proyecto y las expectativas de proyecto que se está ejecutando.
+                        </p>
+                    </section>
+                   <!-- Barra de Noticias Recientes -->
+                 
+                   <div class="noticias-recientes">
+                    <h2>NOTICIAS RECIENTES</h2>
+                    <p>Click en la imagen para saber mas</p>
+                    <div class="noticia">
+                        <div class="texto-noticia">
+                            <a href="blog.html">
+                                <img src="MEDIA/BlogIMG1.jpg" alt="Noticia 1">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="noticia">
+                        <div class="texto-noticia">
+                            <a href="Noticia_2.html">
+                                <img src="MEDIA/BlogIMG2.jpeg" alt="Noticia 2">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="noticia">
+                        <div class="texto-noticia">
+                            <a href="Noticia_5.html">
+                                <img src="MEDIA/BlogIMG5.jpg" alt="Noticia 3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="noticia">
+                        <div class="texto-noticia">
+                            <a href="Noticia_6.html">
+                                <img src="MEDIA/BlogIMG6.jpeg" alt="Noticia 4">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <form id="commentForm">
+                <h1>Deja una respuesta</h1>
+                <p>Tu dirección de correo electrónico no será publicada. Los campos obligatorios están marcados con *</p>
+                <Br><label for="comment">Comentario:</label></Br>
+                <textarea id="comment" name="comment" required></textarea>
+                <br>
+                <br>
+                <label for="name">Nombre : *</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <br>
+                <label for="email">Correo : *</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <br>
+                <button type="submit">Publicar </button>
+                <script src="../js/JSBLOG.js"></script>
+              </form>
+            </div>
+        </main>
+        
+        <section>
+            <footer>
+                <p>&copy; 2024 Centro de Desarrollo Humano - CDH | Derechos reservados.</p>
+                <div>
+                    <a href="https://www.instagram.com" target="_blank" title="Visítanos en Instagram">Instagram</a> |
+                    <a href="https://www.youtube.com" target="_blank" title="Visítanos en YouTube">YouTube</a>
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>

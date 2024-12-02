@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación y Slider</title>
+    <link rel="stylesheet" href="CSS/Noticias.css">
+    <script src="js/Slider.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Galdeano&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="MEDIA/LOGO-FRONT_Mesa-de-trabajo-1_Mesa-de-trabajo-1.png" alt="Logo">
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li class="dropdown">
+                <a href="acerca.html">ACERCA DE NOSOTROS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="programas.html">NUESTROS PROGRAMAS</a></li>
+                    <li><a href="ayuda.html">CÓMO AYUDAR</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="galeria.html">GALERÍA</a>
+                <ul class="dropdown-menu">
+
+                </ul>
+            </li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="dropdown">
+                <a href="contacto.html">CONTÁCTENOS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="donaciones.html">DONACIONES</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="ContenedorTotal">
+            <div class="encabezado">
+                <img alt=""
+                    src="https://secure.gravatar.com/avatar/f38490b260b38f2bf43079b376359b44?s=46&amp;d=mm&amp;r=g"
+                    srcset="https://secure.gravatar.com/avatar/f38490b260b38f2bf43079b376359b44?s=92&amp;d=mm&amp;r=g 2x"
+                    class="avatar avatar-46 photo" height="46" width="46">
+                <div class="texto">
+                    <h2>CDH</h2>
+                    <p>22 MAYO 2024 | Publicado en Noticias</p>
+                </div>
+            </div>
+            <div class="contenedorN1">
+                <section image-text>
+                    <h1>Boletín 01-2024</h1>
+                    <img src="MEDIA/BlogIMG6.jpeg" alt="Jóvenes midiendo la lluvia" id="IMG1">
+                    <h2 style="font-size: 22px;">
+                        Impulsando la Seguridad y los Derechos Humanos:
+                        <br><br>
+                        Proceso Formativo en La Paz
+                    </h2>
+                    <p>
+                        En La Paz,Honduras,de febrero 25 a febrero 27,2024,el proyecto Mujeres y jóvenes en acción por
+                        la paz realizó el proceso formativo
+                        modular para la Auto protección de Defensores de Derechos Humanos (DDH) desarrollando los
+                        módulos de Derechos Humanos, mapeo de riesgos
+                        y la elaboración de los planes de seguridad para lideresas indígenas Lenca, defensores
+                        indígenas Lenca de Derechos Humanos y voluntarios,
+                        pertenecientes a los Concejos de Mujeres Indígenas Comunitarios y a los Concejos de Jóvenes
+                        Indígenas Comunitarios de los Municipios de
+                        Santa María, Santiago Puringla, San Pedro de Tutule, Guajiquiro, Santa Elena y Marcala
+                        Departamento de La Paz.<br><br>
+                        El evento contó con la participación activa de 45 lideres y lideresas Lencas, (treinta y cinco
+                        mujeres y diez hombres) quienes realizaran
+                        replicas en sus comunidades con la finalidad de dotar de herramientas de autocuidado y
+                        protección a los presente y futuros defensores de
+                        derechos humanos.<br><br>
+                        Este proceso fue impartido por especialistas y conto con el apoyo técnico del equipo del
+                        proyecto Mujeres y jóvenes en acción por la paz.
+                    </p>
+                    Descargar Boletín: <a href="MEDIA/Boletiìnes-Esp.pdf">Boletiìnes-Esp.pdf</a>
+                </section>
+                <div class="noticias-recientes">
+                    <h2>NOTICIAS RECIENTES</h2>
+                    <p>Click en la imagen para saber mas</p>
+                    <div class="noticia">
+                        <div class="texto-noticia">
+                            <a href="blog.html">
+                                <img src="MEDIA/BlogIMG1.jpg" alt="Noticia 1">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="noticia">
+                        <div class="texto-noticia">
+                            <a href="Noticia_2.html">
+                                <img src="MEDIA/BlogIMG2.jpeg" alt="Noticia 2">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="noticia">
+                        <div class="texto-noticia">
+                            <a href="Noticia_5.html">
+                                <img src="MEDIA/BlogIMG5.jpg" alt="Noticia 3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="noticia">
+                        <div class="texto-noticia">
+                            <a href="Noticia_6.html">
+                                <img src="MEDIA/BlogIMG6.jpeg" alt="Noticia 4">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <form id="commentForm">
+                <h1>Deja una respuesta</h1>
+                <p>Tu dirección de correo electrónico no será publicada. Los campos obligatorios están marcados con *
+                </p><Br><label for="comment">Comentario:</label></Br>
+                
+                <textarea id="comment" name="comment" required></textarea>
+                <br>
+                <br>
+                <label for="name">Nombre : *</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <br>
+                <label for="email">Correo : *</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <br>
+                <button type="submit">Publicar </button>
+                <script src="../js/JSBLOG.js"></script>
+            </form>
+        </div>
+    </main>
+
+    <section>
+        <footer>
+            <p>&copy; 2024 Centro de Desarrollo Humano - CDH | Derechos reservados.</p>
+            <div>
+                <a href="https://www.instagram.com" target="_blank" title="Visítanos en Instagram">Instagram</a> |
+                <a href="https://www.youtube.com" target="_blank" title="Visítanos en YouTube">YouTube</a>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

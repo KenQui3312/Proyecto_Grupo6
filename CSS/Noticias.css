@@ -1,0 +1,524 @@
+
+/* Estilos generales para la barra de navegación */
+
+body {
+    font-family: 'Galdeano', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Previene desbordamiento horizontal */
+  }
+  
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: #f6f64c;
+    padding: 0 20px;
+    position: relative;
+    /* Asegúrate de que el elemento tenga un posicionamiento */
+    z-index: 9999;
+    /* Un valor alto para estar encima de otros elementos */
+}
+
+.navbar .logo img {
+    height: 50px;
+    max-height: 100%;
+}
+
+/* Menú de navegación */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    font-size: 14px;
+    display: block;
+    padding: 14px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.6; /* Ajusta el valor según tus necesidades */
+    display: inline-block;
+    
+}
+
+.navbar ul li a:hover {
+    background-color: #c6c5c540;
+}
+
+/* Menú desplegable */
+.navbar ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFFF77;
+    min-width: 180px;
+    padding: 0;
+    text-align: left;
+    z-index: 1;
+}
+
+.navbar ul li:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar ul li .dropdown-menu li {
+    display: block;
+}
+
+.navbar ul li .dropdown-menu li a {
+    padding: 10px 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navbar ul li .dropdown-menu li a:hover {
+    background-color: #f9ed81cb;
+}
+
+.menu-toggle {
+    display: none;
+    /* Ocultamos el ícono de la hamburguesa en pantallas grandes */
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        /* Ocultar el menú de navegación por defecto */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #f6f64c;
+    }
+
+    .navbar ul li a {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Estilo para el botón de menú en pantallas pequeñas */
+    .navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: rgb(0, 0, 0);
+    }
+
+    .navbar ul.show {
+        display: block;
+        /* Mostrar el menú cuando la clase show está presente */
+    }
+}
+
+/* Estilos adicionales para dispositivos más pequeños */
+@media (max-width: 480px) {
+    .navbar .logo img {
+        height: 40px;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+
+
+
+/*===========================================BLOG COSAS UNICAS============================*/
+
+  .encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #777070;
+    max-width: 400px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .texto {
+    text-align: left;
+    margin-bottom: 5px;
+    
+  }
+  
+  .texto h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  
+  
+  .texto p {
+    font-size: 16px;
+    
+    margin: 0;
+  }
+
+
+/* Contenedor principal */
+.ContenedorTotal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    border: #333;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+
+.contenedorN1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    border: #333;
+    line-height: 1.2;
+    font-size: 22px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sección de la imagen y texto */
+.section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.section img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.section p {
+    /* Estilos adicionales para el párrafo */
+    text-align: justify;
+    text-align-last: left;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #333;
+    max-width: 75%
+}
+
+.section .image-text p {
+    text-align: justify-all;
+}
+
+    .image-text {
+        display: flex;
+        justify-content: justify-all;
+    }
+  
+    .image-text img {
+        width: 30%;
+    }
+    #IMG1{
+        border-radius: 10%;
+        width: 300px;
+        height: 200px;
+        float: left;
+        margin: 20px;
+    }
+
+/**/
+
+.noticia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+/* Noticias Recientes */
+.noticias-recientes {
+    flex: 1; 
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 200px;
+}
+.noticias-recientes h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+.noticias-recientes p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    color: #333;
+}
+.noticia img {
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 2px solid #000000;
+}
+
+.texto-noticia img {
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 2px solid #000000;
+}
+.noticias-recientes .noticia .texto-noticia {
+    border-color: #000000;
+}
+
+/* Contenedor principal de contenido y barra lateral */
+.contenedorN1 {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-text {
+    flex: 2; 
+}
+
+.texto-noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+  
+.texto-noticia:hover img {
+    transform: scale(1.1); 
+}
+
+form {
+    max-width: 900px;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  textarea, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+@media (max-width: 768px) {
+    .contenedorN1 {
+        flex-direction: column;
+    }
+
+    .image-text {
+        width: 100%;
+    }
+
+    .noticias-recientes {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedorN1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: j;
+    }
+
+    .image-text {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .noticias-recientes {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .section p {
+        text-align: justify;
+        margin: 0 auto;
+        max-width: 90%;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+
+    .section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section p {
+        text-align: justify;
+        margin: 0 auto;
+        max-width: 90%;
+        text-align: justify;
+    }
+
+    .noticias-recientes {
+        text-align: center;
+        align-items: center;
+    }
+
+    .noticia img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Centrado de Noticias Recientes en pantallas pequeñas */
+@media (max-width: 768px) {
+    .noticias-recientes {
+        width: 100%; 
+        text-align: center;
+        margin: 0 auto; 
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
+
+    .noticias-recientes h2, .noticias-recientes p {
+        margin: 10px 0; 
+        padding: 0; 
+        text-align: justify;
+    }
+
+    .noticia img {
+        display: block; 
+        margin: 0 auto;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Estilo del footer */
+
+footer {
+    text-align: center;
+    padding: 0%; /* Reduce el padding para hacerlo más fino */
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8em; /* Reduce el tamaño de la fuente */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-sizing: border-box;
+    margin-top: auto; /* Asegura que el footer se mantenga en la parte inferior */
+    flex-shrink: 0; /* Previene que el footer se haga más pequeño si el contenido es corto */
+}
+
+
+/* Media Queries para dispositivos pequeños */
+
+/* Para dispositivos pequeños (móviles) */
+@media (max-width: 576px) {
+    footer {
+        padding: 10px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+}
+
+/* Para dispositivos medianos (iPad Mini, iPad, etc.) */
+@media (max-width: 768px) {
+    footer {
+        padding: 12px;
+        font-size: 0.85em;
+        text-align: center;
+    }
+}
+
+/* Para dispositivos grandes (tabletas grandes, laptops pequeñas) */
+@media (max-width: 1024px) {
+    footer {
+        padding: 15px;
+        font-size: 0.9em;
+        text-align: center;
+    }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media (min-width: 1200px) {
+    footer {
+        padding: 20px;
+        font-size: 1em;
+        text-align: center;
+    }
+}

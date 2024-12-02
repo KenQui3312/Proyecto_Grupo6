@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTENOS</title>
+    <link rel="stylesheet" href="CSS/styles2.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+ 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Galdeano&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="MEDIA/LOGO-FRONT_Mesa-de-trabajo-1_Mesa-de-trabajo-1.png" alt="Logo">  
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li class="dropdown">
+                <a href="acerca.html">ACERCA DE NOSOTROS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="programas.html">NUESTROS PROGRAMAS</a></li>
+                    <li><a href="ayuda.html">CÓMO AYUDAR</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="galeria.html">GALERÍA</a>
+                <ul class="dropdown-menu">
+
+                </ul>
+            </li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="dropdown">
+                <a href="contacto.html">CONTÁCTENOS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="donaciones.html">DONACIONES</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contact-section">
+        <div class="background-image">
+          <h1>Contáctanos</h1>
+          <p>No hay nada que nos guste más que ponernos manos a la obra y empezar un nuevo proyecto. Hagamos algo grande juntos.</p>
+        </div>
+        <div class="form-container">
+          <form class="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            
+            <label for="company">Compañia/Organizacion:</label>
+            <input type="text" id="company" name="company">
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit">Enviar</button>
+          </form>
+          <div class="contact-info">
+            <h2>CDH: Centro de Desarrollo Humano</h2>
+            <address>
+            Circuito La Knnedy, Calle Principal edificio 0148, Tegucigalpa M.D.C.<br>
+            Tegucigalpa M.D.C.
+            </address>
+            <p><strong>Correo:</strong></p>
+            <a href="mailto:info@centrocdh.org">info@centrocdh.org</a>
+            <p>Tel. (+504) 2221-4809</p>
+           
+          </div>
+        </div>
+      </div>
+      <script src="js/script.js"></script>
+
+
+
+    <footer>
+        <p>&copy; 2024 Centro de Desarrollo Humano - CDH | Derechos reservados.</p>
+        <div>
+            <a href="https://www.instagram.com" target="_blank" title="Visítanos en Instagram">Instagram</a> |
+            <a href="https://www.youtube.com" target="_blank" title="Visítanos en YouTube">YouTube</a>
+        </div>
+    </footer>
+
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
